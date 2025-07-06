@@ -7,8 +7,15 @@
     "lint": "eslint app.js",
     "fix": "eslint --fix",
     "format": "prettier --write",
-    "semi": "true"
+    "semi": "true",
+    "prepare": "husky install"
   },
+  "lint-staged":{
+    "*.js":[
+      "prettier --write",
+      "eslint" --fix
+    ]
+  }
   "keywords": [],
   "author": "",
   "license": "ISC",
